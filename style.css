@@ -1,0 +1,133 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 13px;
+  word-wrap: break-word;
+}
+body {
+  background-color: hsl(210, 46%, 95%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+main {
+  width: 1200px;
+  height: 700px;
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    " Daniel Daniel Jonathan Kira "
+    " Jeanette Patrick Patrick Kira ";
+}
+.name_description_black {
+  color: black;
+  margin-left: 10px;
+}
+
+.name_description_white {
+  color: white;
+  margin-left: 10px;
+}
+.user {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  align-items: center;
+  margin-bottom: 0px;
+}
+.border_ring {
+  border: 2px solid hsl(263, 92%, 67%);
+}
+img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+p {
+  color: rgb(56, 56, 56);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.headline_white {
+  color: white;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.headline_black {
+  color: black;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.colored_paragraphs {
+  color: rgb(219, 219, 219);
+  margin: 30px 0px;
+  line-height: 20px;
+}
+.white_paragraphs {
+  color: rgb(56, 56, 56);
+  margin: 30px 0px;
+  line-height: 20px;
+}
+.Daniel_clifford {
+  background-color: hsl(263, 55%, 52%);
+  background-image: url(./images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position-x: 75%;
+  background-position-y: top;
+  grid-area: Daniel;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 1px 20px 30px rgba(0, 0, 0, 0.438);
+}
+.Jonathan_Walters {
+  background-color: hsl(217, 19%, 35%);
+  grid-area: Jonathan;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 1px 20px 30px rgba(0, 0, 0, 0.438);
+}
+.Kira_whittle {
+  background-color: hsl(0, 0%, 100%);
+  grid-area: Kira;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 1px 20px 30px rgba(0, 0, 0, 0.438);
+}
+.Jeanette_Harmon {
+  background-color: hsl(0, 0%, 100%);
+  grid-area: Jeanette;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 1px 20px 30px rgba(0, 0, 0, 0.438);
+}
+
+.Patrick_Abrams {
+  background-color: hsl(219, 29%, 14%);
+  grid-area: Patrick;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 1px 20px 30px rgba(0, 0, 0, 0.438);
+}
+.verified {
+  color: rgb(153, 152, 152);
+  font-size: 12px;
+}
+footer {
+  color: rgb(199, 86, 10);
+}
